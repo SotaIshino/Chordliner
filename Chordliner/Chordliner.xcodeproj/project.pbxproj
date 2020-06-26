@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB02A102249C611000CC7357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB02A101249C611000CC7357 /* AppDelegate.swift */; };
+		EB02A104249C611000CC7357 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB02A103249C611000CC7357 /* SceneDelegate.swift */; };
+		EB02A106249C611000CC7357 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB02A105249C611000CC7357 /* ViewController.swift */; };
+		EB02A109249C611000CC7357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB02A107249C611000CC7357 /* Main.storyboard */; };
+		EB02A10B249C611900CC7357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB02A10A249C611900CC7357 /* Assets.xcassets */; };
+		EB02A10E249C611900CC7357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB02A10C249C611900CC7357 /* LaunchScreen.storyboard */; };
+		EB02A118249C760C00CC7357 /* SetChordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB02A117249C760C00CC7357 /* SetChordViewController.swift */; };
+		EB1A6DA824A1BFD10037FF66 /* E♭m_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB1A6DA724A1BFD10037FF66 /* E♭m_guitar.wav */; };
+		EB1A6DAB24A1C0C20037FF66 /* Gm_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB1A6DA924A1C0C20037FF66 /* Gm_piano.wav */; };
+		EB1A6DAC24A1C0C20037FF66 /* Gm_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB1A6DAA24A1C0C20037FF66 /* Gm_guitar.wav */; };
+		EB1A6DB124A1C1540037FF66 /* Am_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB1A6DAD24A1C1530037FF66 /* Am_piano.wav */; };
+		EB1A6DB224A1C1540037FF66 /* A♭m_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB1A6DAE24A1C1540037FF66 /* A♭m_guitar.wav */; };
+		EB1A6DB324A1C1540037FF66 /* Am_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB1A6DAF24A1C1540037FF66 /* Am_guitar.wav */; };
+		EB1A6DB424A1C1540037FF66 /* A♭m_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB1A6DB024A1C1540037FF66 /* A♭m_piano.wav */; };
+		EB1A6DB624A1E8690037FF66 /* BpmTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A6DB524A1E8690037FF66 /* BpmTextField.swift */; };
+		EB764B57249C9C9000ED33AD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB764B56249C9C9000ED33AD /* TableViewCell.swift */; };
+		EBBED92324A19BE200695250 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBED92224A19BE200695250 /* AVFoundation.framework */; };
+		EBBED95424A1B64200695250 /* A♭_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED92524A1B63E00695250 /* A♭_guitar.wav */; };
+		EBBED95524A1B64200695250 /* Cm_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED92624A1B63E00695250 /* Cm_piano.wav */; };
+		EBBED95624A1B64200695250 /* Cdim_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED92724A1B63E00695250 /* Cdim_guitar.wav */; };
+		EBBED95724A1B64200695250 /* B♭_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED92824A1B63E00695250 /* B♭_piano.wav */; };
+		EBBED95824A1B64200695250 /* F_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED92924A1B63E00695250 /* F_piano.wav */; };
+		EBBED95924A1B64200695250 /* B_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED92A24A1B63E00695250 /* B_guitar.wav */; };
+		EBBED95A24A1B64200695250 /* Csus4_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED92B24A1B63E00695250 /* Csus4_guitar.wav */; };
+		EBBED95B24A1B64200695250 /* Csus4_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED92C24A1B63E00695250 /* Csus4_piano.wav */; };
+		EBBED95C24A1B64200695250 /* Dsus4_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED92D24A1B63E00695250 /* Dsus4_guitar.wav */; };
+		EBBED95D24A1B64200695250 /* F_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED92E24A1B63E00695250 /* F_guitar.wav */; };
+		EBBED95E24A1B64200695250 /* Cm_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED92F24A1B63E00695250 /* Cm_guitar.wav */; };
+		EBBED95F24A1B64200695250 /* Bdim_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93024A1B63E00695250 /* Bdim_piano.wav */; };
+		EBBED96024A1B64200695250 /* B♭dim_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93124A1B63F00695250 /* B♭dim_guitar.wav */; };
+		EBBED96124A1B64200695250 /* E♭_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93224A1B63F00695250 /* E♭_piano.wav */; };
+		EBBED96224A1B64200695250 /* G7_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93324A1B63F00695250 /* G7_piano.wav */; };
+		EBBED96424A1B64200695250 /* E♭m_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93524A1B63F00695250 /* E♭m_piano.wav */; };
+		EBBED96524A1B64200695250 /* E♭_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93624A1B63F00695250 /* E♭_guitar.wav */; };
+		EBBED96624A1B64200695250 /* G7_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93724A1B63F00695250 /* G7_guitar.wav */; };
+		EBBED96824A1B64200695250 /* E♭sus2_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93924A1B63F00695250 /* E♭sus2_guitar.wav */; };
+		EBBED96924A1B64200695250 /* A♭_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93A24A1B64000695250 /* A♭_piano.wav */; };
+		EBBED96A24A1B64200695250 /* Ddim_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93B24A1B64000695250 /* Ddim_piano.wav */; };
+		EBBED96B24A1B64200695250 /* B♭_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93C24A1B64000695250 /* B♭_guitar.wav */; };
+		EBBED96C24A1B64200695250 /* Cdim_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93D24A1B64000695250 /* Cdim_piano.wav */; };
+		EBBED96D24A1B64200695250 /* Fm_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93E24A1B64000695250 /* Fm_piano.wav */; };
+		EBBED96E24A1B64200695250 /* Bm_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED93F24A1B64000695250 /* Bm_guitar.wav */; };
+		EBBED97024A1B64200695250 /* B♭dim_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94124A1B64000695250 /* B♭dim_piano.wav */; };
+		EBBED97124A1B64200695250 /* Fm_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94224A1B64000695250 /* Fm_guitar.wav */; };
+		EBBED97424A1B64200695250 /* B_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94524A1B64100695250 /* B_piano.wav */; };
+		EBBED97524A1B64200695250 /* Ddim_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94624A1B64100695250 /* Ddim_guitar.wav */; };
+		EBBED97624A1B64200695250 /* rest.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94724A1B64100695250 /* rest.wav */; };
+		EBBED97724A1B64200695250 /* B♭sus4_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94824A1B64100695250 /* B♭sus4_piano.wav */; };
+		EBBED97824A1B64200695250 /* Bdim_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94924A1B64100695250 /* Bdim_guitar.wav */; };
+		EBBED97924A1B64200695250 /* B♭sus4_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94A24A1B64100695250 /* B♭sus4_guitar.wav */; };
+		EBBED97A24A1B64200695250 /* G♭_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94B24A1B64100695250 /* G♭_piano.wav */; };
+		EBBED97B24A1B64200695250 /* C_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94C24A1B64100695250 /* C_guitar.wav */; };
+		EBBED97C24A1B64200695250 /* Bm_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94D24A1B64100695250 /* Bm_piano.wav */; };
+		EBBED97D24A1B64200695250 /* Dsus4_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94E24A1B64100695250 /* Dsus4_piano.wav */; };
+		EBBED97E24A1B64200695250 /* E♭sus2_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED94F24A1B64200695250 /* E♭sus2_piano.wav */; };
+		EBBED97F24A1B64200695250 /* G♭_guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED95024A1B64200695250 /* G♭_guitar.wav */; };
+		EBBED98024A1B64200695250 /* C_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBBED95124A1B64200695250 /* C_piano.wav */; };
+		EBF6668724A3306C008A784A /* Play.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6668624A3306C008A784A /* Play.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB02A0FE249C611000CC7357 /* Chordliner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chordliner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB02A101249C611000CC7357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB02A103249C611000CC7357 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EB02A105249C611000CC7357 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB02A108249C611000CC7357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB02A10A249C611900CC7357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB02A10D249C611900CC7357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB02A10F249C611900CC7357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB02A117249C760C00CC7357 /* SetChordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetChordViewController.swift; sourceTree = "<group>"; };
+		EB1A6DA724A1BFD10037FF66 /* E♭m_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "E♭m_guitar.wav"; sourceTree = "<group>"; };
+		EB1A6DA924A1C0C20037FF66 /* Gm_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Gm_piano.wav; sourceTree = "<group>"; };
+		EB1A6DAA24A1C0C20037FF66 /* Gm_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Gm_guitar.wav; sourceTree = "<group>"; };
+		EB1A6DAD24A1C1530037FF66 /* Am_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Am_piano.wav; sourceTree = "<group>"; };
+		EB1A6DAE24A1C1540037FF66 /* A♭m_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A♭m_guitar.wav"; sourceTree = "<group>"; };
+		EB1A6DAF24A1C1540037FF66 /* Am_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Am_guitar.wav; sourceTree = "<group>"; };
+		EB1A6DB024A1C1540037FF66 /* A♭m_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A♭m_piano.wav"; sourceTree = "<group>"; };
+		EB1A6DB524A1E8690037FF66 /* BpmTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmTextField.swift; sourceTree = "<group>"; };
+		EB764B56249C9C9000ED33AD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EBBD289B24A074B2000499DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EBBED92224A19BE200695250 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EBBED92524A1B63E00695250 /* A♭_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A♭_guitar.wav"; sourceTree = "<group>"; };
+		EBBED92624A1B63E00695250 /* Cm_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cm_piano.wav; sourceTree = "<group>"; };
+		EBBED92724A1B63E00695250 /* Cdim_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cdim_guitar.wav; sourceTree = "<group>"; };
+		EBBED92824A1B63E00695250 /* B♭_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "B♭_piano.wav"; sourceTree = "<group>"; };
+		EBBED92924A1B63E00695250 /* F_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F_piano.wav; sourceTree = "<group>"; };
+		EBBED92A24A1B63E00695250 /* B_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B_guitar.wav; sourceTree = "<group>"; };
+		EBBED92B24A1B63E00695250 /* Csus4_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Csus4_guitar.wav; sourceTree = "<group>"; };
+		EBBED92C24A1B63E00695250 /* Csus4_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Csus4_piano.wav; sourceTree = "<group>"; };
+		EBBED92D24A1B63E00695250 /* Dsus4_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Dsus4_guitar.wav; sourceTree = "<group>"; };
+		EBBED92E24A1B63E00695250 /* F_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F_guitar.wav; sourceTree = "<group>"; };
+		EBBED92F24A1B63E00695250 /* Cm_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cm_guitar.wav; sourceTree = "<group>"; };
+		EBBED93024A1B63E00695250 /* Bdim_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bdim_piano.wav; sourceTree = "<group>"; };
+		EBBED93124A1B63F00695250 /* B♭dim_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "B♭dim_guitar.wav"; sourceTree = "<group>"; };
+		EBBED93224A1B63F00695250 /* E♭_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "E♭_piano.wav"; sourceTree = "<group>"; };
+		EBBED93324A1B63F00695250 /* G7_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G7_piano.wav; sourceTree = "<group>"; };
+		EBBED93524A1B63F00695250 /* E♭m_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "E♭m_piano.wav"; sourceTree = "<group>"; };
+		EBBED93624A1B63F00695250 /* E♭_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "E♭_guitar.wav"; sourceTree = "<group>"; };
+		EBBED93724A1B63F00695250 /* G7_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G7_guitar.wav; sourceTree = "<group>"; };
+		EBBED93924A1B63F00695250 /* E♭sus2_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "E♭sus2_guitar.wav"; sourceTree = "<group>"; };
+		EBBED93A24A1B64000695250 /* A♭_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A♭_piano.wav"; sourceTree = "<group>"; };
+		EBBED93B24A1B64000695250 /* Ddim_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ddim_piano.wav; sourceTree = "<group>"; };
+		EBBED93C24A1B64000695250 /* B♭_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "B♭_guitar.wav"; sourceTree = "<group>"; };
+		EBBED93D24A1B64000695250 /* Cdim_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cdim_piano.wav; sourceTree = "<group>"; };
+		EBBED93E24A1B64000695250 /* Fm_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Fm_piano.wav; sourceTree = "<group>"; };
+		EBBED93F24A1B64000695250 /* Bm_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bm_guitar.wav; sourceTree = "<group>"; };
+		EBBED94124A1B64000695250 /* B♭dim_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "B♭dim_piano.wav"; sourceTree = "<group>"; };
+		EBBED94224A1B64000695250 /* Fm_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Fm_guitar.wav; sourceTree = "<group>"; };
+		EBBED94524A1B64100695250 /* B_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B_piano.wav; sourceTree = "<group>"; };
+		EBBED94624A1B64100695250 /* Ddim_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ddim_guitar.wav; sourceTree = "<group>"; };
+		EBBED94724A1B64100695250 /* rest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rest.wav; sourceTree = "<group>"; };
+		EBBED94824A1B64100695250 /* B♭sus4_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "B♭sus4_piano.wav"; sourceTree = "<group>"; };
+		EBBED94924A1B64100695250 /* Bdim_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bdim_guitar.wav; sourceTree = "<group>"; };
+		EBBED94A24A1B64100695250 /* B♭sus4_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "B♭sus4_guitar.wav"; sourceTree = "<group>"; };
+		EBBED94B24A1B64100695250 /* G♭_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G♭_piano.wav"; sourceTree = "<group>"; };
+		EBBED94C24A1B64100695250 /* C_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C_guitar.wav; sourceTree = "<group>"; };
+		EBBED94D24A1B64100695250 /* Bm_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bm_piano.wav; sourceTree = "<group>"; };
+		EBBED94E24A1B64100695250 /* Dsus4_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Dsus4_piano.wav; sourceTree = "<group>"; };
+		EBBED94F24A1B64200695250 /* E♭sus2_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "E♭sus2_piano.wav"; sourceTree = "<group>"; };
+		EBBED95024A1B64200695250 /* G♭_guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G♭_guitar.wav"; sourceTree = "<group>"; };
+		EBBED95124A1B64200695250 /* C_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C_piano.wav; sourceTree = "<group>"; };
+		EBF6668624A3306C008A784A /* Play.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Play.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB02A0FB249C611000CC7357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBED92324A19BE200695250 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB02A0F5249C611000CC7357 = {
+			isa = PBXGroup;
+			children = (
+				EB02A100249C611000CC7357 /* Chordliner */,
+				EB02A0FF249C611000CC7357 /* Products */,
+				EBBD289A24A074B2000499DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB02A0FF249C611000CC7357 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB02A0FE249C611000CC7357 /* Chordliner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB02A100249C611000CC7357 /* Chordliner */ = {
+			isa = PBXGroup;
+			children = (
+				EB02A101249C611000CC7357 /* AppDelegate.swift */,
+				EB02A103249C611000CC7357 /* SceneDelegate.swift */,
+				EB02A105249C611000CC7357 /* ViewController.swift */,
+				EB02A117249C760C00CC7357 /* SetChordViewController.swift */,
+				EB02A107249C611000CC7357 /* Main.storyboard */,
+				EBF6668624A3306C008A784A /* Play.swift */,
+				EB1A6DB524A1E8690037FF66 /* BpmTextField.swift */,
+				EB764B56249C9C9000ED33AD /* TableViewCell.swift */,
+				EB02A10A249C611900CC7357 /* Assets.xcassets */,
+				EB02A10C249C611900CC7357 /* LaunchScreen.storyboard */,
+				EB02A10F249C611900CC7357 /* Info.plist */,
+				EBBD289D24A074CF000499DF /* wav */,
+			);
+			path = Chordliner;
+			sourceTree = "<group>";
+		};
+		EBBD289A24A074B2000499DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBBED92224A19BE200695250 /* AVFoundation.framework */,
+				EBBD289B24A074B2000499DF /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBBD289D24A074CF000499DF /* wav */ = {
+			isa = PBXGroup;
+			children = (
+				EBBED92524A1B63E00695250 /* A♭_guitar.wav */,
+				EBBED93A24A1B64000695250 /* A♭_piano.wav */,
+				EB1A6DAE24A1C1540037FF66 /* A♭m_guitar.wav */,
+				EB1A6DB024A1C1540037FF66 /* A♭m_piano.wav */,
+				EB1A6DAF24A1C1540037FF66 /* Am_guitar.wav */,
+				EB1A6DAD24A1C1530037FF66 /* Am_piano.wav */,
+				EBBED92A24A1B63E00695250 /* B_guitar.wav */,
+				EBBED94524A1B64100695250 /* B_piano.wav */,
+				EBBED93C24A1B64000695250 /* B♭_guitar.wav */,
+				EBBED92824A1B63E00695250 /* B♭_piano.wav */,
+				EBBED93124A1B63F00695250 /* B♭dim_guitar.wav */,
+				EBBED94124A1B64000695250 /* B♭dim_piano.wav */,
+				EBBED94A24A1B64100695250 /* B♭sus4_guitar.wav */,
+				EBBED94824A1B64100695250 /* B♭sus4_piano.wav */,
+				EBBED94924A1B64100695250 /* Bdim_guitar.wav */,
+				EBBED93024A1B63E00695250 /* Bdim_piano.wav */,
+				EBBED93F24A1B64000695250 /* Bm_guitar.wav */,
+				EBBED94D24A1B64100695250 /* Bm_piano.wav */,
+				EBBED94C24A1B64100695250 /* C_guitar.wav */,
+				EBBED95124A1B64200695250 /* C_piano.wav */,
+				EBBED92724A1B63E00695250 /* Cdim_guitar.wav */,
+				EBBED93D24A1B64000695250 /* Cdim_piano.wav */,
+				EBBED92F24A1B63E00695250 /* Cm_guitar.wav */,
+				EBBED92624A1B63E00695250 /* Cm_piano.wav */,
+				EBBED92B24A1B63E00695250 /* Csus4_guitar.wav */,
+				EBBED92C24A1B63E00695250 /* Csus4_piano.wav */,
+				EBBED94624A1B64100695250 /* Ddim_guitar.wav */,
+				EBBED93B24A1B64000695250 /* Ddim_piano.wav */,
+				EBBED92D24A1B63E00695250 /* Dsus4_guitar.wav */,
+				EBBED94E24A1B64100695250 /* Dsus4_piano.wav */,
+				EBBED93624A1B63F00695250 /* E♭_guitar.wav */,
+				EBBED93224A1B63F00695250 /* E♭_piano.wav */,
+				EBBED93524A1B63F00695250 /* E♭m_piano.wav */,
+				EB1A6DA724A1BFD10037FF66 /* E♭m_guitar.wav */,
+				EBBED93924A1B63F00695250 /* E♭sus2_guitar.wav */,
+				EBBED94F24A1B64200695250 /* E♭sus2_piano.wav */,
+				EBBED92E24A1B63E00695250 /* F_guitar.wav */,
+				EBBED92924A1B63E00695250 /* F_piano.wav */,
+				EBBED94224A1B64000695250 /* Fm_guitar.wav */,
+				EBBED93E24A1B64000695250 /* Fm_piano.wav */,
+				EBBED95024A1B64200695250 /* G♭_guitar.wav */,
+				EBBED94B24A1B64100695250 /* G♭_piano.wav */,
+				EBBED93724A1B63F00695250 /* G7_guitar.wav */,
+				EBBED93324A1B63F00695250 /* G7_piano.wav */,
+				EB1A6DAA24A1C0C20037FF66 /* Gm_guitar.wav */,
+				EB1A6DA924A1C0C20037FF66 /* Gm_piano.wav */,
+				EBBED94724A1B64100695250 /* rest.wav */,
+			);
+			path = wav;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB02A0FD249C611000CC7357 /* Chordliner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB02A112249C611900CC7357 /* Build configuration list for PBXNativeTarget "Chordliner" */;
+			buildPhases = (
+				EB02A0FA249C611000CC7357 /* Sources */,
+				EB02A0FB249C611000CC7357 /* Frameworks */,
+				EB02A0FC249C611000CC7357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chordliner;
+			productName = Chordliner;
+			productReference = EB02A0FE249C611000CC7357 /* Chordliner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB02A0F6249C611000CC7357 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = asOne;
+				TargetAttributes = {
+					EB02A0FD249C611000CC7357 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = EB02A0F9249C611000CC7357 /* Build configuration list for PBXProject "Chordliner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB02A0F5249C611000CC7357;
+			productRefGroup = EB02A0FF249C611000CC7357 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB02A0FD249C611000CC7357 /* Chordliner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB02A0FC249C611000CC7357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB02A10E249C611900CC7357 /* LaunchScreen.storyboard in Resources */,
+				EBBED97024A1B64200695250 /* B♭dim_piano.wav in Resources */,
+				EBBED97B24A1B64200695250 /* C_guitar.wav in Resources */,
+				EB02A10B249C611900CC7357 /* Assets.xcassets in Resources */,
+				EBBED97424A1B64200695250 /* B_piano.wav in Resources */,
+				EBBED97E24A1B64200695250 /* E♭sus2_piano.wav in Resources */,
+				EBBED96C24A1B64200695250 /* Cdim_piano.wav in Resources */,
+				EB1A6DAC24A1C0C20037FF66 /* Gm_guitar.wav in Resources */,
+				EB1A6DA824A1BFD10037FF66 /* E♭m_guitar.wav in Resources */,
+				EBBED97F24A1B64200695250 /* G♭_guitar.wav in Resources */,
+				EBBED97524A1B64200695250 /* Ddim_guitar.wav in Resources */,
+				EBBED96524A1B64200695250 /* E♭_guitar.wav in Resources */,
+				EBBED95524A1B64200695250 /* Cm_piano.wav in Resources */,
+				EBBED96624A1B64200695250 /* G7_guitar.wav in Resources */,
+				EB1A6DB124A1C1540037FF66 /* Am_piano.wav in Resources */,
+				EBBED95B24A1B64200695250 /* Csus4_piano.wav in Resources */,
+				EBBED97A24A1B64200695250 /* G♭_piano.wav in Resources */,
+				EB1A6DB324A1C1540037FF66 /* Am_guitar.wav in Resources */,
+				EBBED96124A1B64200695250 /* E♭_piano.wav in Resources */,
+				EBBED96024A1B64200695250 /* B♭dim_guitar.wav in Resources */,
+				EBBED96E24A1B64200695250 /* Bm_guitar.wav in Resources */,
+				EBBED97624A1B64200695250 /* rest.wav in Resources */,
+				EBBED96924A1B64200695250 /* A♭_piano.wav in Resources */,
+				EB02A109249C611000CC7357 /* Main.storyboard in Resources */,
+				EBBED97924A1B64200695250 /* B♭sus4_guitar.wav in Resources */,
+				EBBED96224A1B64200695250 /* G7_piano.wav in Resources */,
+				EBBED98024A1B64200695250 /* C_piano.wav in Resources */,
+				EBBED97124A1B64200695250 /* Fm_guitar.wav in Resources */,
+				EBBED95624A1B64200695250 /* Cdim_guitar.wav in Resources */,
+				EBBED97824A1B64200695250 /* Bdim_guitar.wav in Resources */,
+				EBBED95A24A1B64200695250 /* Csus4_guitar.wav in Resources */,
+				EBBED95924A1B64200695250 /* B_guitar.wav in Resources */,
+				EB1A6DB424A1C1540037FF66 /* A♭m_piano.wav in Resources */,
+				EBBED97724A1B64200695250 /* B♭sus4_piano.wav in Resources */,
+				EB1A6DB224A1C1540037FF66 /* A♭m_guitar.wav in Resources */,
+				EBBED95724A1B64200695250 /* B♭_piano.wav in Resources */,
+				EBBED95824A1B64200695250 /* F_piano.wav in Resources */,
+				EBBED96D24A1B64200695250 /* Fm_piano.wav in Resources */,
+				EBBED96A24A1B64200695250 /* Ddim_piano.wav in Resources */,
+				EBBED95D24A1B64200695250 /* F_guitar.wav in Resources */,
+				EBBED96424A1B64200695250 /* E♭m_piano.wav in Resources */,
+				EB1A6DAB24A1C0C20037FF66 /* Gm_piano.wav in Resources */,
+				EBBED95F24A1B64200695250 /* Bdim_piano.wav in Resources */,
+				EBBED95E24A1B64200695250 /* Cm_guitar.wav in Resources */,
+				EBBED97C24A1B64200695250 /* Bm_piano.wav in Resources */,
+				EBBED95C24A1B64200695250 /* Dsus4_guitar.wav in Resources */,
+				EBBED96824A1B64200695250 /* E♭sus2_guitar.wav in Resources */,
+				EBBED95424A1B64200695250 /* A♭_guitar.wav in Resources */,
+				EBBED97D24A1B64200695250 /* Dsus4_piano.wav in Resources */,
+				EBBED96B24A1B64200695250 /* B♭_guitar.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB02A0FA249C611000CC7357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB764B57249C9C9000ED33AD /* TableViewCell.swift in Sources */,
+				EB02A106249C611000CC7357 /* ViewController.swift in Sources */,
+				EBF6668724A3306C008A784A /* Play.swift in Sources */,
+				EB02A102249C611000CC7357 /* AppDelegate.swift in Sources */,
+				EB02A118249C760C00CC7357 /* SetChordViewController.swift in Sources */,
+				EB02A104249C611000CC7357 /* SceneDelegate.swift in Sources */,
+				EB1A6DB624A1E8690037FF66 /* BpmTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB02A107249C611000CC7357 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB02A108249C611000CC7357 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB02A10C249C611900CC7357 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB02A10D249C611900CC7357 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB02A110249C611900CC7357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB02A111249C611900CC7357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB02A113249C611900CC7357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3VD464AA8;
+				INFOPLIST_FILE = Chordliner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.al-j.Chordlinermochomocho";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EB02A114249C611900CC7357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3VD464AA8;
+				INFOPLIST_FILE = Chordliner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.al-j.Chordlinermochomocho";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB02A0F9249C611000CC7357 /* Build configuration list for PBXProject "Chordliner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB02A110249C611900CC7357 /* Debug */,
+				EB02A111249C611900CC7357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB02A112249C611900CC7357 /* Build configuration list for PBXNativeTarget "Chordliner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB02A113249C611900CC7357 /* Debug */,
+				EB02A114249C611900CC7357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB02A0F6249C611000CC7357 /* Project object */;
+}
