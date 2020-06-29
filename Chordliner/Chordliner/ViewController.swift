@@ -136,89 +136,101 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func playButtonTapped(_ sender: Any) {
-        var i = 0
-        let bpm = Int(self.bpmTextField.text!)!
         let playimage = UIImage(named: "play")
         let stopImage = UIImage(named: "play2")
         
-        DispatchQueue.global().async {
-            
-            var looping = true
-            while looping && currentChordArray[0] != "end" {
-                
-                DispatchQueue.main.async {
-                    print(i)
-                    
-                    if looping {
-                        self.playButton.setImage(stopImage, for: .normal)
-                        //再生中はplayButton、composeButtonを無効
-                        self.playButton.isEnabled = false
-                        self.composeButton.isEnabled = false
-                        self.gOrPButton.isEnabled = false
-                        
-                        //次再生がrest…4分休符以外の場合、再生中の音を停止
-                        if currentChordArray[i] != "rest" {self.playInstance.stop()}
-                        
-                        //ラベルに再生中のコードを表示
-                        self.chordLabel.text = currentChordArray[i]
-                        print(self.chordLabel.text!)
-                        
-                        //再生!
-                        if self.guitarOrPiano == true {
-                            self.imageView.image = self.pgMan[1]
-                            self.playInstance.playGuitar(i: currentChordArray[i])
-                        } else {
-                            self.imageView.image = self.pgMan[5]
-                            self.playInstance.playPiano(i: currentChordArray[i])
-                        }
-                        
-                        i += 1
-                        //currentChordArrayが最後or"end"の時、ループを脱す
-                        //ボタンも有効に
-                        if i >= currentChordArray.count || currentChordArray[i] == "end" {
-                            looping = false
-                            self.playButton.isEnabled = true
-                            self.composeButton.isEnabled = true
-                            self.gOrPButton.isEnabled = true
-                            self.playButton.setImage(playimage, for: .normal)
-                            
-                            if self.guitarOrPiano == true {
-                                self.imageView.image = self.pgMan[2]
-                            } else {
-                                self.imageView.image = self.pgMan[6]
-                            }
-                        }
-                    }
-                }
-                
-                if looping {
-                    //bpmTextFieldにおける2分音符or4分音符のマイクロ秒を計算&停止
-                    if self.beats == true {
-                        let sleep = Double(120000000 / bpm)
-                        print(sleep)
-                        usleep(useconds_t(sleep))
-                    } else {
-                        let sleep = Double(60000000 / bpm)
-                        print(sleep)
-                        usleep(useconds_t(sleep))
-                    }
-                }
-            }
-        }
-        
-        if currentChordArray[0] == "end" {
-            if guitarOrPiano == true {
-                imageView.image = pgMan[3]
-            } else {
-                imageView.image = pgMan[7]
-            }
-            
+        //BPM:が0か空欄の時はなにもしないよ
+        if bpmTextField.text == "" || bpmTextField.text == "0" {
             let anime: [UIImage] = [UIImage(named: "play2")!, UIImage(named: "play")!]
             playButton.setImage(anime[0], for: .normal)
             playButton.imageView?.animationImages = anime
             playButton.imageView?.animationDuration = 0.2
             playButton.imageView?.animationRepeatCount = 1
             playButton.imageView?.startAnimating()
+        } else {
+            var i = 0
+            let bpm = Int(self.bpmTextField.text!)!
+            
+            DispatchQueue.global().async {
+                
+                var looping = true
+                while looping && currentChordArray[0] != "end" {
+                    
+                    DispatchQueue.main.async {
+                        print(i)
+                        
+                        if looping {
+                            self.playButton.setImage(stopImage, for: .normal)
+                            //再生中はplayButton、composeButtonを無効
+                            self.playButton.isEnabled = false
+                            self.composeButton.isEnabled = false
+                            self.gOrPButton.isEnabled = false
+                            
+                            //次再生がrest…4分休符以外の場合、再生中の音を停止
+                            if currentChordArray[i] != "rest" {self.playInstance.stop()}
+                            
+                            //ラベルに再生中のコードを表示
+                            self.chordLabel.text = currentChordArray[i]
+                            print(self.chordLabel.text!)
+                            
+                            //再生!
+                            if self.guitarOrPiano == true {
+                                self.imageView.image = self.pgMan[1]
+                                self.playInstance.playGuitar(i: currentChordArray[i])
+                            } else {
+                                self.imageView.image = self.pgMan[5]
+                                self.playInstance.playPiano(i: currentChordArray[i])
+                            }
+                            
+                            i += 1
+                            //currentChordArrayが最後or"end"の時、ループを脱す
+                            //ボタンも有効に
+                            if i >= currentChordArray.count || currentChordArray[i] == "end" {
+                                looping = false
+                                self.playButton.isEnabled = true
+                                self.composeButton.isEnabled = true
+                                self.gOrPButton.isEnabled = true
+                                self.playButton.setImage(playimage, for: .normal)
+                                
+                                if self.guitarOrPiano == true {
+                                    self.imageView.image = self.pgMan[2]
+                                } else {
+                                    self.imageView.image = self.pgMan[6]
+                                }
+                            }
+                        }
+                    }
+                    
+                    if looping {
+                        //bpmTextFieldにおける2分音符or4分音符のマイクロ秒を計算&停止
+                        if self.beats == true {
+                            let sleep = Double(120000000 / bpm)
+                            print(sleep)
+                            usleep(useconds_t(sleep))
+                        } else {
+                            let sleep = Double(60000000 / bpm)
+                            print(sleep)
+                            usleep(useconds_t(sleep))
+                        }
+                    }
+                }
+            }
+            
+            //1:がendの際
+            if currentChordArray[0] == "end" {
+                if guitarOrPiano == true {
+                    imageView.image = pgMan[3]
+                } else {
+                    imageView.image = pgMan[7]
+                }
+                
+                let anime: [UIImage] = [UIImage(named: "play2")!, UIImage(named: "play")!]
+                playButton.setImage(anime[0], for: .normal)
+                playButton.imageView?.animationImages = anime
+                playButton.imageView?.animationDuration = 0.2
+                playButton.imageView?.animationRepeatCount = 1
+                playButton.imageView?.startAnimating()
+            }
         }
         
         playButton.setImage(playimage, for: .normal)
